@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background"></div>
+
+    <!-- Login Form -->
+    <div id="login-form" class="login-container">
+        <h2>Login</h2>
+        <div class="input-group">
+            <input type="email" id="login-email" placeholder="Email">
+            <i class="fas fa-envelope"></i>
+        </div>
+        <div class="input-group">
+            <input type="password" id="login-pass" placeholder="Password">
+            <i class="fas fa-eye" id="login-eye"></i>
+        </div>
+        <button id="login-btn" class="login-btn">Login</button>
+        <div class="register-link">
+            Don't have an account? <a href="#" id="register-link">Register</a>
+        </div>
+    </div>
+
+    <!-- Register Form -->
+    <div id="register-form" class="login-container" style="display:none;">
+        <h2>Register</h2>
+        <div class="input-group">
+            <input type="email" id="register-email" placeholder="Email">
+            <i class="fas fa-envelope"></i>
+        </div>
+        <div class="input-group">
+            <input type="password" id="register-pass" placeholder="Password">
+            <i class="fas fa-eye" id="register-eye"></i>
+        </div>
+        <button id="register-btn" class="login-btn">Register</button>
+        <div class="login-link">
+            Already have an account? <a href="#" id="login-link">Login</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
